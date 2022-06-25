@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 520);
+  createCanvas(1294, 600);
 
   // STEP 2: Start classifying (will listen to mic by default)
   classifyAudio();
@@ -38,24 +38,26 @@ function draw() {
   text(label, width/2, height - 16);
 
   // Background noise is headphones
-  let emoji = "Tutto ok";
+  let emoji = "IT ok";
   // Pick an emoji based on label
-  if (label == "Allarme antifurto") {
-    emoji = "ALLARME ANTIFURTO";
+  if (label == "Allarme Antifurto") {
+    emoji = "⚠️ALLARME ANTIFURTO⚠️";
   } else if (label == "Allarme Antincendio") {
-    emoji = "ALLARME ANTINCENDIO";
+    emoji = "⚠️ALLARME ANTINCENDIO⚠️";
   } else if (label == "Allarme Antisismico") {
-    emoji = "ALLARME ANTISISMICO";
+    emoji = "⚠️ALLARME ANTISISMICO⚠️";
   } else if (label == "Sirena Ambulanza") {
-    emoji = "SIRENA AMBULANZA";
+    emoji = "⚠️SIRENA AMBULANZA⚠️";
   } else if (label == "Sirena Polizia") {
-    emoji = "SIRENA POLIZIA"
+    emoji = "⚠️SIRENA POLIZIA⚠️"
+  } else if (label == "Rumore di sottofondo") {
+    emoji = "Tutto ok";
   }
 
   
 
   // Draw the emoji
-  textSize(256);
+  textSize(90);
   text(emoji, width / 2, height / 2);
   }
 

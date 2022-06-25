@@ -16,18 +16,27 @@
  */
 
 /* CSS files add styling rules to your content */
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image:
+  url('https://cdn.pixabay.com/photo/2017/05/24/12/04/ppt-backgrounds-2340383_960_720.png');
+  font-family: 'Open Sans', Times, serif, Geneva, Tahoma, sans-serif;
   margin: 2em;
+  font-size: 150%;
 }
 
 h1 {
   font-style: italic;
-  color: #8cff00;
+  color: #ff0000;
 }
-
-
 video {
   clear: both;
   display: block;
