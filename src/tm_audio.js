@@ -34,7 +34,7 @@ function draw() {
   // STEP 4: Draw the label
   textSize(32);
   textAlign(CENTER, CENTER);
-  fill(255);
+  fill(0);
   text(label, width/2, height - 16);
 
   // Background noise is headphones
