@@ -29,7 +29,7 @@ function classifyAudio() {
 }
 
 function draw() {
-  background(89);
+  background(1000);
 
   // STEP 4: Draw the label
   textSize(32);
