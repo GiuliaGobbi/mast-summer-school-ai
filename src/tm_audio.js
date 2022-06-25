@@ -38,18 +38,18 @@ function draw() {
   // text(label, width/2, height - 16);
 
   // Background noise is headphones
-  let emoji = "☎️";
+  let emoji = "Tutto tranquillo";
   // Pick an emoji based on label
   if (label == "Allarme antifurto") {
-    emoji = "🚂";
+    emoji = "ALLARME ANTIFURTO";
   } else if (label == "Allarme Antincendio") {
-    emoji = "🛎";
+    emoji = "ALLARME ANTINCENDIO";
   } else if (label == "Allarme Antisismico") {
-    emoji = "🎸";
+    emoji = "ALLARME ANTISISMICO";
   } else if (label == "Sirena Ambulanza") {
-    emoji = "🚑";
+    emoji = "SIRENA AMBULANZA";
   } else if (label == "Sirena Polizia") {
-    emoji = "👮"
+    emoji = "SIRENA POLIZIA"
   }
 
   
