@@ -57,7 +57,6 @@ function draw() {
   // Draw the emoji
   textSize(256);
   text(emoji, width / 2, height / 2);
-  document.write(emoji)
   }
 
 // STEP 3: Get the classification!
