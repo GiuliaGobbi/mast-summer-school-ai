@@ -9,7 +9,7 @@ let label = "waiting...";
 
 // Classifier and model url
 let classifier;
-let modelURL = 'https://teachablemachine.withgoogle.com/models/KlEjFiNXo/';
+let modelURL = 'https://teachablemachine.withgoogle.com/models/mKSeYbKrA/';
 
 // STEP 1: Load the model!
 function preload() {
@@ -40,18 +40,24 @@ function draw() {
   // Background noise is headphones
   let emoji = "🎧";
   // Pick an emoji based on label
-  if (label == "Battito di mani") {
+  if (label == "Allarme antifurto") {
     emoji = "🚂";
-  } else if (label == "Fischio") {
+  } else if (label == "Allarme Antincendio") {
     emoji = "🛎";
-  } else if (label == "Rumore di sottofondo") {
+  } else if (label == "Allarme Antisismico") {
     emoji = "🎸";
+  } else if (label == "Sirena Ambulanza") {
+    emoji = "🚑";
+  } else if (label == "Sirena Polizia") {
+    emoji = "👮"
+  }
+
   }
 
   // Draw the emoji
   textSize(256);
   text(emoji, width / 2, height / 2);
-}
+
 
 // STEP 3: Get the classification!
 function gotResults(error, results) {
