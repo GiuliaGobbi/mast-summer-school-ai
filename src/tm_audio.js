@@ -32,10 +32,10 @@ function draw() {
   background(0);
 
   // STEP 4: Draw the label
-  // textSize(32);
+  textSize(32);
   textAlign(CENTER, CENTER);
-  // fill(255);
-  // text(label, width/2, height - 16);
+  fill(255);
+  text(label, width/2, height - 16);
 
   // Background noise is headphones
   let emoji = "Tutto ok";
