@@ -38,7 +38,7 @@ function draw() {
   // text(label, width/2, height - 16);
 
   // Background noise is headphones
-  let emoji = "Tutto tranquillo";
+  let emoji = "Tutto ok";
   // Pick an emoji based on label
   if (label == "Allarme antifurto") {
     emoji = "ALLARME ANTIFURTO";
